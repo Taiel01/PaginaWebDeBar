@@ -1,0 +1,406 @@
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background: url(https://images.unsplash.com/photo-1540484668164-185993edca46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80) center center/cover repeat; 
+  margin: 15px !important;
+  
+}
+
+img{
+  border-radius: 2px;
+}
+
+a{
+  color: #fff !important;
+}
+
+.imgCarousel{
+  width: 333px;
+  border: 1px solid rgb(34, 34, 34);
+  height: 80vh;
+
+}
+
+/* ICONO */
+.icono{
+    width: 350px;
+}
+
+/* MAP */
+
+.div_map{
+  margin: 15px;
+}
+
+.mapa{
+  width: 100%;
+  height: 80vh;
+  border: 2px solid white;
+  border-radius: 2px;
+  box-shadow: 0px 0px 20px 3px #e1fbff;
+  transition: width 1.25s;
+}
+
+/* FORM */
+.p_diaDeReserva{
+  color: whitesmoke;
+}
+
+.reservar{
+  width: auto;
+  color: rgb(170, 170, 170);
+  background-color: whitesmoke;
+  border: 1px solid bisque;
+}
+
+
+/* NAV */
+nav {
+    margin: 27px auto 0;
+    position: relative;
+    width: 311px;
+    height: 50px;
+    background-color: #060604;
+    border-radius: 8px;
+    font-size: 0;
+}
+
+
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+
+a:nth-child(1) {
+    width: 100px;
+}
+
+a:nth-child(2) {
+    width: 110px;
+}
+
+a:nth-child(3) {
+    width: 100px;
+}
+
+a:nth-child(4) {
+    width: 160px;
+}
+
+a:nth-child(5) {
+    width: 120px;
+}
+
+nav .start-home,
+a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+    background-color: #1abc9c;
+}
+
+nav .start-about,
+a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100px;
+    background-color: #e74c3c;
+}
+
+nav .start-blog,
+a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 210px;
+    background-color: #3498db;
+}
+
+nav .start-portefolio,
+a:nth-child(4):hover~.animation {
+    width: 160px;
+    left: 310px;
+    background-color: #9b59b6;
+}
+
+nav .start-contact,
+a:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 470px;
+    background-color: #e67e22;
+}
+
+
+
+@media (min-width: 600px) {
+
+  .container {
+    max-width: 550px !important; 
+
+  }
+
+  .carrusel{
+    max-width: 567px !important;
+    width: 500px;
+  }
+
+  .mapa{
+    width: 506px;
+  }
+
+}
+
+@media (min-width: 900px){
+
+  .container {
+    max-width: 900px !important; 
+  }
+
+  .mapa{
+    width: 850px;
+    
+  }
+
+}
+
+@media (max-width: 390px){
+
+
+  .carrusel{
+    height: 55vh;
+  }
+
+  .carousel-inner{
+    height: 55vh;
+  }
+
+}
+
+@media (min-width: 500px){
+
+
+  .carrusel{
+    height: 86vh;
+  }
+
+}
+
+
+/*Form*/
+
+.login-box {
+  position: absolute;
+  width: 350px;
+  padding: 40px;
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+  opacity: 100%;
+  transition: opacity 8s;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+.label_dia{
+  color: #03e9f4 !important;
+  font-size: 15px !important;
+}
+
+.ocultar{
+  display: none !important;
+}
+
+.guardar{
+  color: aliceblue !important;
+}
+
+.carousel {
+  height: 80vh;
+  display: flex;
+}
+
+.active{
+  box-shadow: 14px 2px 20px -4px #75b9ff;
+}
+
+.carousel-inner {
+  transition: margin-left 1s, opacity 1.15s;
+  opacity: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-inner-mil{
+  opacity: 1%;
+  margin-left: -1000px !important;
+}
+
+.antiwidth{
+  width: 0px !important;
+}
+
+.opacity0{
+  opacity: 0 !important;
+}
