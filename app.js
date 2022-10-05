@@ -41,14 +41,6 @@ function detectarPosibleCambio(){
     }
 }
 
-window.addEventListener("load", gatos);
-
-function gatos(){
-    carrusel.classList.remove("carousel-inner-mil")
-}
-
-
-
 
 function irAReservas(){
     window.scrollTo(0, 2000);
